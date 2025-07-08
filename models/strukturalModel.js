@@ -12,7 +12,7 @@ const StrukturalDesa = db.define("StrukturalDesa", {
   },
   image_url: {
     type: DataTypes.STRING,
-    defaultValue: "https://via.placeholder.com/150",
+    defaultValue: "https://mediaindonesia.gumlet.io/news/2024/05/1f31726c67ea9f66fe3152c2b0ac2dce.jpg?w=376&dpr=2.6",
   },
   image_public_id: { // ← Tambahan
     type: DataTypes.STRING,

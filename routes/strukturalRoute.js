@@ -1,5 +1,5 @@
 import express from "express";
-import upload from "../middlewares/uploadImage.js";
+import upload from "../middlewares/uploadStrukturalImage.js";
 import {
   getAllStruktural,
   getStrukturalById,

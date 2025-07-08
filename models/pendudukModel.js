@@ -14,8 +14,12 @@ const Penduduk = db.define("Penduduk", {
     type: DataTypes.INTEGER,
     defaultValue: 400,
   },
+  data_penduduk: {
+    type: DataTypes.INTEGER,
+  },
 }, {
   tableName: "penduduk",
+  timestamps: true,
 });
 
 export default Penduduk;
