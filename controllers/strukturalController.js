@@ -49,7 +49,7 @@ export const createStruktural = async (req, res) => {
 // PUT update data struktural
 export const updateStruktural = async (req, res) => {
   try {
-    const { jabatan, nama, role } = req.body;
+    const { jabatan, nama } = req.body;
     const data = await StrukturalDesa.findByPk(req.params.id);
     if (!data) return res.status(404).json({ message: "Data tidak ditemukan" });
 
@@ -70,7 +70,7 @@ export const updateStruktural = async (req, res) => {
     await data.update({
       jabatan,
       nama,
-      role: parseInt(role),
+      // role: parseInt(role),
       image_url,
       image_public_id,
     });

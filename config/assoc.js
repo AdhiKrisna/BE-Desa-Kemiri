@@ -5,7 +5,7 @@ import PotensiWisataModel from "../models/potensiWisataModel.js";
 
 const association = async () => {
     try {
-        await db.sync({ alter: true });
+        await db.sync({ alter: false });
         console.log("✅ All models synced");
 
         // Insert default data penduduk kalau kosong
