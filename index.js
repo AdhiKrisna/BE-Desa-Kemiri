@@ -5,6 +5,7 @@ import pendudukRoutes from "./routes/pendudukRoute.js";
 import strukturalRoutes from "./routes/strukturalRoute.js";
 import potensiWisataRoutes from "./routes/potensiWisataRoute.js";
 import potensiKomoditasRoutes from "./routes/potensiKomoditasRoute.js";
+import informasiRoutes from "./routes/informasiRoute.js";
 import association from "./config/assoc.js";
 
 dotenv.config();
@@ -21,6 +22,8 @@ app.use("/api/penduduk", pendudukRoutes);
 app.use("/api/struktural", strukturalRoutes);
 app.use("/api/potensi-wisata", potensiWisataRoutes);
 app.use("/api/potensi-komoditas", potensiKomoditasRoutes);
+app.use("/api/informasi", informasiRoutes);
+
 
 
 app.get("/", (req, res) => {
